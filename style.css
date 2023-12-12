@@ -1,0 +1,145 @@
+* {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #000000;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  background-color: #fafbff;
+  min-height: 100vh;
+  max-width: 1440px;
+  display: flex;
+}
+
+.side-bar {
+  width: 306px;
+  background-color: #ffffff;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 53px;
+}
+.logo__container {
+  display: flex;
+  margin-right: 4px;
+}
+.logo__icon {
+  width: 37px;
+  height: 37px;
+  background-image: url("./assets/img/svg/logo.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 8px;
+}
+.logo__title {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 600;
+}
+.logo__version {
+  font-size: 10px;
+  font-weight: 500;
+  margin-top: 12px;
+  color: #838383;
+}
+
+.user-badge {
+  display: flex;
+}
+.user-badge__image {
+  width: 42px;
+  height: 42px;
+  background-image: url("./assets/img/png/evano-image.png");
+  margin-right: 12px;
+}
+.user-badge__name {
+  font-weight: 500;
+}
+
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  padding: 36px 28px 76px;
+}
+
+.navigation {
+  flex-grow: 1;
+}
+.navigation__list {
+  margin: 0;
+  padding: 0;
+}
+.navigation__item {
+  list-style: none;
+  height: 46px;
+  border-radius: 8px;
+  margin-bottom: 18px;
+  padding: 11px 8px 11px 11px;
+}
+.navigation__item.active {
+  background-color: #5932ea;
+}
+.navigation__item.active .navigation__title {
+  color: #ffffff;
+}
+.navigation__item.active .navigation__arrow {
+  background-image: url("./assets/img/png/chevron-right-active.png");
+}
+.navigation__button {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: 0;
+  padding: 0;
+  width: 100%;
+}
+.navigation__icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 14px;
+}
+.navigation__icon-key-square {
+  background-image: url("./assets/img/png/key-square.png");
+}
+.navigation__icon-3d-square {
+  background-image: url("./assets/img/png/3d-square.png");
+}
+.navigation__icon-user-square {
+  background-image: url("./assets/img/png/user-square.png");
+}
+.navigation__icon-wallet-money {
+  background-image: url("./assets/img/png/wallet-money.png");
+}
+.navigation__icon-discount-shape {
+  background-image: url("./assets/img/png/discount-shape.png");
+}
+.navigation__icon-message-question {
+  background-image: url("./assets/img/png/message-question.png");
+}
+.navigation__title {
+  color: #9197b3;
+  font-weight: 500;
+  flex-grow: 1;
+  text-align: start;
+}
+.navigation__arrow {
+  width: 16px;
+  height: 16px;
+  background-image: url("./assets/img/png/chevron-right.png");
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,82 @@
+.navigation {
+  flex-grow: 1;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    list-style: none;
+    height: 46px;
+    border-radius: 8px;
+    margin-bottom: 18px;
+    padding: 11px 8px 11px 11px;
+
+    &.active {
+      background-color: $color-nav-active;
+
+      .navigation {
+        &__title {
+          color: $color-font-nav-active;
+        }
+
+        &__arrow {
+          background-image: url('./assets/img/png/chevron-right-active.png');
+        }
+      }
+    }
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 14px;
+
+    &-key-square {
+      background-image: url('./assets/img/png/key-square.png');
+    }
+
+    &-3d-square {
+      background-image: url('./assets/img/png/3d-square.png');
+    }
+
+    &-user-square {
+      background-image: url('./assets/img/png/user-square.png');
+    }
+
+    &-wallet-money {
+      background-image: url('./assets/img/png/wallet-money.png');
+    }
+
+    &-discount-shape {
+      background-image: url('./assets/img/png/discount-shape.png');
+    }
+
+    &-message-question {
+      background-image: url('./assets/img/png/message-question.png');
+    }
+  }
+
+  &__title {
+    color: $color-font-nav;
+    font-weight: 500;
+    flex-grow: 1;
+    text-align: start;
+  }
+
+  &__arrow {
+    width: 16px;
+    height: 16px;
+    background-image: url('./assets/img/png/chevron-right.png');
+  }
+}
