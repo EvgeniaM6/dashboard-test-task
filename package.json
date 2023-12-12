@@ -1,0 +1,12 @@
+{
+  "name": "dashboard-test-task",
+  "version": "1.0.0",
+  "description": "",
+  "private": false,
+  "scripts": {
+    "start": "sass --watch ./style.scss ./style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

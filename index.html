@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dashboard test task</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <aside class="side-bar">
+      <div class="logo">
+        <div class="logo__container">
+          <div class="logo__icon"></div>
+          <h1 class="logo__title">Dashboard</h1>
+        </div>
+        <div class="logo__version">v.01</div>
+      </div>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <button class="navigation__button">
+              <div class="navigation__icon navigation__icon-key-square"></div>
+              <div class="navigation__title">Dashboard</div>
+              <div class="navigation__arrow-disabled"></div>
+            </button>
+          </li>
+          <li class="navigation__item">
+            <button class="navigation__button">
+              <div class="navigation__icon navigation__icon-3d-square"></div>
+              <div class="navigation__title">Product</div>
+              <div class="navigation__arrow"></div>
+            </button>
+          </li>
+          <li class="navigation__item active">
+            <button class="navigation__button">
+              <div class="navigation__icon navigation__icon-user-square"></div>
+              <div class="navigation__title">Customers</div>
+              <div class="navigation__arrow"></div>
+            </button>
+          </li>
+          <li class="navigation__item">
+            <button class="navigation__button">
+              <div class="navigation__icon navigation__icon-wallet-money"></div>
+              <div class="navigation__title">Income</div>
+              <div class="navigation__arrow"></div>
+            </button>
+          </li>
+          <li class="navigation__item">
+            <button class="navigation__button">
+              <div class="navigation__icon navigation__icon-discount-shape"></div>
+              <div class="navigation__title">Promote</div>
+              <div class="navigation__arrow"></div>
+            </button>
+          </li>
+          <li class="navigation__item">
+            <button class="navigation__button">
+              <div class="navigation__icon navigation__icon-message-question"></div>
+              <div class="navigation__title">Help</div>
+              <div class="navigation__arrow"></div>
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <div class="user-badge">
+        <div class="user-badge__image"></div>
+        <div class="user-badge__info">
+          <div class="user-badge__name">Evano</div>
+          <div class="user-badge__position">Project Manager</div>
+        </div>
+      </div>
+    </aside>
+    <main>
+      <h2 class="greeting">Hello Evano 👋🏼,</h2>
+      <div class="customers">
+        <div class="customers__header">
+          <div class="customers__title">
+            <h3 class="customers__title-main">All Customers</h3>
+            <div class="customers__title-detail">Active Members</div>
+          </div>
+          <div class="customers__search search">
+            <input class="search__input" type="text" placeholder="Search">
+            <div class="search__icon"></div>
+          </div>
+        </div>
+        <div class="customers__data data">
+          <table class="data__table">
+            <thead class="data__table-head">
+              <th></th>
+              <th>Customer Name</th>
+              <th>Company</th>
+              <th>Phone Number</th>
+              <th>Email</th>
+              <th>Country</th>
+              <th>Status</th>
+              <th></th>
+            </thead>
+            <tbody>
+              <tr class="data__table-row">
+                <td></td>
+                <td>Jane Cooper</td>
+                <td>Microsoft</td>
+                <td>(225) 555-0118</td>
+                <td>jane@microsoft.com</td>
+                <td>United States</td>
+                <td>
+                  <div class="data__table-label">
+                    Active
+                  </div>
+                </td>
+                <td></td>
+              </tr>
+              <tr class="data__table-row">
+                <td></td>
+                <td>Floyd Miles</td>
+                <td>Yahoo</td>
+                <td>(205) 555-0100</td>
+                <td>floyd@yahoo.com</td>
+                <td>Kiribati</td>
+                <td>
+                  <div class="data__table-label">
+                    Inactive
+                  </div>
+                </td>
+                <td></td>
+              </tr>
+              <tr class="data__table-row">
+                <td></td>
+                <td>Ronald Richards</td>
+                <td>Adobe</td>
+                <td>(302) 555-0107</td>
+                <td>ronald@adobe.com</td>
+                <td>Israel</td>
+                <td>
+                  <div class="data__table-label">
+                    Inactive
+                  </div>
+                </td>
+                <td></td>
+              </tr>
+              <tr class="data__table-row">
+                <td></td>
+                <td>Marvin McKinney</td>
+                <td>Tesla</td>
+                <td>(252) 555-0126</td>
+                <td>marvin@tesla.com</td>
+                <td>Iran</td>
+                <td>
+                  <div class="data__table-label">
+                    Active
+                  </div>
+                </td>
+                <td></td>
+              </tr>
+              <tr class="data__table-row">
+                <td></td>
+                <td>Jerome Bell</td>
+                <td>Google</td>
+                <td>(629) 555-0129</td>
+                <td>jerome@google.com</td>
+                <td>Réunion</td>
+                <td>
+                  <div class="data__table-label">
+                    Active
+                  </div>
+                </td>
+                <td></td>
+              </tr>
+              <tr class="data__table-row">
+                <td></td>
+                <td>Kathryn Murphy</td>
+                <td>Microsoft</td>
+                <td>(406) 555-0120</td>
+                <td>kathryn@microsoft.com</td>
+                <td>Curaçao</td>
+                <td>
+                  <div class="data__table-label">
+                    Active
+                  </div>
+                </td>
+                <td></td>
+              </tr>
+              <tr class="data__table-row">
+                <td></td>
+                <td>Jacob Jones</td>
+                <td>Yahoo</td>
+                <td>(208) 555-0112</td>
+                <td>jacob@yahoo.com</td>
+                <td>Brazil</td>
+                <td>
+                  <div class="data__table-label">
+                    Active
+                  </div>
+                </td>
+                <td></td>
+              </tr>
+              <tr class="data__table-row">
+                <td></td>
+                <td>Kristin Watson</td>
+                <td>Facebook</td>
+                <td>(704) 555-0127</td>
+                <td>kristin@facebook.com</td>
+                <td>Åland Islands</td>
+                <td>
+                  <div class="data__table-label">
+                    Inactive
+                  </div>
+                </td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="data__details">
+            <div class="data__details-info">Showing data 1 to 8 of 256K entries</div>
+            <div class="data__details-pages pages">
+              <div class="pages__item">
+                <button class="pages__item-btn"><</button>
+              </div>
+              <div class="pages__item">
+                <button class="pages__item-btn active">1</button>
+              </div>
+              <div class="pages__item">
+                <button class="pages__item-btn active">2</button>
+              </div>
+              <div class="pages__item">
+                <button class="pages__item-btn active">3</button>
+              </div>
+              <div class="pages__item">
+                <button class="pages__item-btn active">4</button>
+              </div>
+              <div class="pages__item">...</div>
+              <div class="pages__item">
+                <button class="pages__item-btn active">40</button>
+              </div>
+              <div class="pages__item">
+                <button class="pages__item-btn">></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
