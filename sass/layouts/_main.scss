@@ -1,9 +1,29 @@
 .main {
+  flex-grow: 1;
+  width: calc(1440px - 306px);
   padding: 41px 95px 41px 71px;
+
+  @include media-laptop {
+    width: calc(100vw - 306px);
+    flex-grow: 0;
+  }
+
+  @include media-tablet {
+    width: calc(100vw - 175px);
+    padding: 10px;
+  }
+
+  @include media-mobile {
+    width: calc(100vw - 80px);
+  }
 
   .greeting {
     margin: 0 0 51px 0;
     font-size: 24px;
     font-weight: 500;
+
+    @include media-tablet {
+      margin: 0 0 5px 0;
+    }
   }
 }

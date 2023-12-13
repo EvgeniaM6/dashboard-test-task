@@ -14,13 +14,28 @@
     background-image: url('./assets/img/svg/logo.svg');
     background-position: center;
     background-repeat: no-repeat;
+    background-size: contain;
     margin-right: 8px;
+
+    @include media-tablet {
+      width: 25px;
+      height: 25px;
+      margin-right: 5px;
+    }
   }
 
   &__title {
     margin: 0;
     font-size: 26px;
     font-weight: 600;
+
+    @include media-tablet {
+      font-size: 18px;
+    }
+
+    @include media-mobile {
+      display: none;
+    }
   }
 
   &__version {
@@ -28,5 +43,13 @@
     font-weight: 500;
     margin-top: 12px;
     color: $color-font-secondary;
+
+    @include media-tablet {
+      margin-top: 8px;
+    }
+
+    @include media-mobile {
+      display: none;
+    }
   }
 }

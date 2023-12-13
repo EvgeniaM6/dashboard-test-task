@@ -2,4 +2,15 @@
   display: flex;
   flex-direction: column;
   padding: 36px 28px 76px;
+  width: 306px;
+  background-color: $color-background-aside;
+
+  @include media-tablet {
+    padding: 10px;
+    width: 175px;
+  }
+
+  @include media-mobile {
+    width: 80px;
+  }
 }

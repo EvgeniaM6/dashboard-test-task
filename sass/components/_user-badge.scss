@@ -1,11 +1,20 @@
 .user-badge {
   display: flex;
 
+  @include media-mobile {
+    flex-direction: column;
+  }
+
   &__image {
     width: 42px;
     height: 42px;
     background-image: url('./assets/img/png/evano-image.png');
     margin-right: 12px;
+
+    @include media-mobile {
+      margin-right: 0;
+      margin-bottom: 5px;
+    }
   }
 
   &__name {
