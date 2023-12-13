@@ -1,9 +1,14 @@
 @import './sass/abstract/constants';
+@import './sass/abstract/mixins';
 
 @import './sass/base/base';
 
 @import './sass/components/logo';
 @import './sass/components/user-badge';
+@import './sass/components/customers';
+@import './sass/components/search';
+@import './sass/components/table';
 
 @import './sass/layouts/side-bar';
 @import './sass/layouts/navigation';
+@import './sass/layouts/main';

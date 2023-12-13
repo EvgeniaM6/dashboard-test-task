@@ -1,0 +1,139 @@
+.data {
+  padding-right: 40px;
+
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
+
+    &-head {
+      tr::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 104.3%;
+        left: 0;
+        height: 1px;
+        background-color: $color-table-border;
+        bottom: 0;
+      }
+
+      th {
+        padding: 14px 0;
+        color: $color-font-table-head;
+        text-align: start;
+        padding-left: 38px;
+
+        &.left {
+          min-width: 172px;
+        }
+
+        &.second {
+          min-width: 131px;
+        }
+
+        &.third {
+          min-width: 156px;
+        }
+
+        &.forth {
+          min-width: 207px;
+        }
+
+        &.fifth {
+          min-width: 140px;
+        }
+
+        &.sixth {
+          padding-left: 50px;
+        }
+      }
+    }
+
+    &-body {
+      tr::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 96%;
+        right: 0;
+        height: 1px;
+        background-color: $color-table-border;
+        bottom: 0;
+
+      }
+    }
+
+    &-row {
+      position: relative;
+      td {
+        padding: 20px 0;
+        padding-left: 38px;
+      }
+    }
+
+    &-label {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80px;
+      height: 29px;
+      border-radius: 4px;
+      font-weight: 500;
+
+      &.active {
+        background-color: $color-background-label-active;
+        color: $color-label-active;
+        border: 1px solid $color-border-label-active;
+      }
+
+      &.inactive {
+        background-color: $color-background-label-inactive;
+        color: $color-label-inactive;
+        border: 1px solid $color-border-label-inactive;
+      }
+
+      &.large {
+        width: 84px;
+      }
+    }
+  }
+
+  &__details {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 38px;
+
+    &-info {
+      color: $color-font-table-head;
+      font-weight: 500;
+    }
+
+    .pages {
+      display: flex;
+
+      &__item {
+        margin-right: 12px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        &-btn {
+          background-color: $color-page-background;
+          border: 1px solid $color-page-border;
+          border-radius: 4px;
+          min-width: 24px;
+          height: 24px;
+          font-weight: 500;
+          font-size: 12px;
+
+          &.active {
+            background-color: $color-nav-active;
+            border: 1px solid $color-nav-active;
+            color: $color-font-nav-active;
+          }
+        }
+      }
+    }
+  }
+}

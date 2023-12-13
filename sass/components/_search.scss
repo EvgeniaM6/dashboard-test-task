@@ -1,0 +1,22 @@
+.search {
+  position: relative;
+
+  &__input {
+    height: 38px;
+    border: none;
+    border-radius: 10px;
+    background-color: $color-input;
+    padding: 10px 30px 10px 40px;
+    font-size: 12px;
+  }
+
+  &__icon {
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    background-image: url('./assets/img/svg/search.svg');
+  }
+}
