@@ -155,6 +155,11 @@
           height: 24px;
           font-weight: 500;
           font-size: 12px;
+          transition: all .2s ease-in-out;
+
+          &:hover {
+            background-color: $color-nav-hover;
+          }
 
           &.active {
             background-color: $color-nav-active;

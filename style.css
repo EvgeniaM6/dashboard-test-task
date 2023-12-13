@@ -317,6 +317,10 @@ body .container {
   height: 24px;
   font-weight: 500;
   font-size: 12px;
+  transition: all 0.2s ease-in-out;
+}
+.data__details .pages__item-btn:hover {
+  background-color: #d5c9ff;
 }
 .data__details .pages__item-btn.active {
   background-color: #5932ea;
@@ -356,6 +360,10 @@ body .container {
   border-radius: 8px;
   margin-bottom: 18px;
   padding: 11px 8px 11px 11px;
+  transition: all 0.2s ease-in-out;
+}
+.navigation__item:hover {
+  background-color: #d5c9ff;
 }
 .navigation__item.active {
   background-color: #5932ea;
